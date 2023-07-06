@@ -1,10 +1,12 @@
 <button
   class="btn btn-primary"
+  (click)="onCreateServer()"
   [disabled] = "!allowNewServer"> <!--We bind the properties of a class to a variable or a function in the Typescript
    code-->
   Add Server
 </button>
 <p>{{ allowNewServer }}</p> <!-- Showing using String binding -->
-<p [innerText]="allowNewServer"></p> <!-- Showing using property binding -->
+<!--p [innerText]="allowNewServer"></p--> <!-- Showing using property binding -->
+<p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
