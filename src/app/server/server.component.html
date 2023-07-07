@@ -1,2 +1,5 @@
-<p>{{'Server'}} with ID is {{ serverId }} is {{ getServerStatus() }}</p>
+<p [ngStyle]="{backgroundColor: getColor()}">{{'Server'}} with ID is {{ serverId }} is {{ getServerStatus() }}</p>
+<!--Here we use attribute directives, meaning that these wont add or remove any elements, but only change the element-->
+<!-- Also the [] is not part of the directive, it is only an attribute binder -->
+<!-- ngStyle allows to dynamically update the styles -->
 <!-- for String interpolation, only the functions should be called that return strings-->
