@@ -2,7 +2,12 @@
 <input
   type="text"
   class="form-control"
-  (input)="onUpdateServerName($event)">
+  (input)="onUpdateServerName($event)"> <!-- Event binding -->
+<hr>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName"> <!-- Two way binding -->
 <p>{{ serverName }}</p>
 <button
   class="btn btn-primary"
