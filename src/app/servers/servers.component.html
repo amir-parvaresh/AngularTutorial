@@ -25,5 +25,4 @@ structural, meaning it changes the structure of our DOM. Either adds the element
 <ng-template #noServer> <!--# is used as local reference -->
   <p>No server was created!</p>
 </ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server> <!-- iterates through the list, it is a structural directive-->
