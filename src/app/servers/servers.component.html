@@ -18,6 +18,9 @@
 </button>
 <p>{{ allowNewServer }}</p> <!-- Showing using String binding -->
 <!--p [innerText]="allowNewServer"></p--> <!-- Showing using property binding -->
-<p>{{ serverCreationStatus }}</p>
+<!--<p>{{ serverCreationStatus }}</p>-->
+<p *ngIf="serverCreated">Server was created server name is {{serverName}}</p> <!-- * is needed becaus it is structural, meaning it
+changes the structure of our DOM. Either adds the element or doesnt add it-->
+<!-- for ngIf it should be any directive that returns true or false -->
 <app-server></app-server>
 <app-server></app-server>
